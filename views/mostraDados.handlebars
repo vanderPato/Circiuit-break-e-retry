@@ -1,0 +1,16 @@
+ <form action="/busca" method="POST">
+
+ <input type="text" name="dad" value="{{datas.code}}">
+ <input type="text" value= "{{datas.state}}">
+ <input type="text" value= "{{datas.city}}"><br>
+ <input type="text" value= "{{datas.address}}">
+ <input type="text" value= "{{datas.district}}">
+ <input type="submit" value="Buscar"/>
+
+{{#if error}}
+ 
+ Status code {{error.status}}
+    {{/if}}
+
+</form>
+
